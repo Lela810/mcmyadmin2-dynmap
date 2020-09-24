@@ -15,6 +15,7 @@ RUN \
  apt-get install -y \
 	git-core \
 	libgdiplus \
+	git \
 	openjdk-8-jdk-headless \
 	unzip \
 	zip && \
@@ -35,6 +36,9 @@ RUN \
 
 # copy local files
 COPY root/ /
+
+RUN             git clone https://github.com/isitgeorge/McMyAdmin-Extension-Dynmap.git /home/minecraft/mcmyadmin/Modern/Extensions/Dynmap
+RUN             sed -i 's/McMyAdmin.LoadExtensions=/&Dynmap/' /home/minecraft/mcmyadmin/McMyAdmin.conf
 
 # ports and volumes
 EXPOSE 8080 25565 8123
