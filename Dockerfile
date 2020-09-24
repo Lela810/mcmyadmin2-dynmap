@@ -43,7 +43,7 @@ VOLUME /minecraft
 WORKDIR /minecraft
 
 RUN git clone https://github.com/isitgeorge/McMyAdmin-Extension-Dynmap.git /minecraft/Modern/Extensions/Dynmap
-RUN /opt/mcmyadmin2/MCMA2_Linux_x86_64 -setpass password -configonly -y
+RUN /opt/mcmyadmin2/MCMA2_Linux_x86_64 -setpass password -configonly
 RUN sed -i 's/McMyAdmin.LoadExtensions=/&Dynmap/' /minecraft/McMyAdmin.conf
 
 ENTRYPOINT /opt/mcmyadmin2/MCMA2_Linux_x86_64
