@@ -37,6 +37,8 @@ RUN \
 # copy local files
 COPY root/ /
 
+RUN mkdir /minecraft/Modern
+RUN mkdir /minecraft/Modern/Extensions
 RUN mkdir /minecraft/Modern/Extensions/Dynmap
 
 RUN git clone https://github.com/isitgeorge/McMyAdmin-Extension-Dynmap.git /minecraft/Modern/Extensions/Dynmap
