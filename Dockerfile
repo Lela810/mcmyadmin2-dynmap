@@ -40,10 +40,10 @@ COPY root/ /
 # ports and volumes
 EXPOSE 8080 25565 8123
 VOLUME /minecraft
-
+WORKDIR /minecraft
 
 RUN git clone https://github.com/isitgeorge/McMyAdmin-Extension-Dynmap.git /minecraft/Modern/Extensions/Dynmap
-RUN /opt/mcmyadmin2/MCMA2_Linux_x86_64 -configonly
+RUN /opt/mcmyadmin2/MCMA2_Linux_x86_64 -setpass password -configonly -y
 RUN sed -i 's/McMyAdmin.LoadExtensions=/&Dynmap/' /minecraft/McMyAdmin.conf
 
 ENTRYPOINT /opt/mcmyadmin2/MCMA2_Linux_x86_64
