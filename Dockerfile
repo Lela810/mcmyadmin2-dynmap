@@ -3,8 +3,7 @@ FROM lsiobase/ubuntu:xenial
 # set version label
 ARG BUILD_DATE
 ARG VERSION
-LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
-LABEL maintainer="sparklyballs"
+LABEL build_version="Version:- ${VERSION} Build-date:- ${BUILD_DATE}"
 
 # set environment variables
 ARG DEBIAN_FRONTEND="noninteractive"
