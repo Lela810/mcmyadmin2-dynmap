@@ -16,6 +16,7 @@ RUN \
 	git-core \
 	libgdiplus \
 	git \
+	sed \
 	openjdk-8-jdk-headless \
 	unzip \
 	zip && \
