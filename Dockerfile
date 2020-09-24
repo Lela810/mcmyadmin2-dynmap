@@ -42,7 +42,6 @@ EXPOSE 8080 25565 8123
 VOLUME /minecraft
 WORKDIR /minecraft
 
-RUN touch /minecraft/McMyAdmin.conf
 
 RUN git clone https://github.com/isitgeorge/McMyAdmin-Extension-Dynmap.git /minecraft/Modern/Extensions/Dynmap
-RUN sed -i 's/McMyAdmin.LoadExtensions=/&Dynmap/' /minecraft/McMyAdmin.conf
+RUN touch /minecraft/McMyAdmin.conf && sed -i 's/McMyAdmin.LoadExtensions=/&Dynmap/' /minecraft/McMyAdmin.conf
