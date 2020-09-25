@@ -44,4 +44,4 @@ WORKDIR /minecraft
 
 
 RUN git clone https://github.com/isitgeorge/McMyAdmin-Extension-Dynmap.git /minecraft/Modern/Extensions/Dynmap
-RUN touch /minecraft/McMyAdmin.conf && sed -i 's/McMyAdmin.LoadExtensions=/&Dynmap/' /minecraft/McMyAdmin.conf
+RUN git clone https://github.com/isitgeorge/McMyAdmin-Extension-BanLookup.git /minecraft/Modern/Extensions/BanLookup
