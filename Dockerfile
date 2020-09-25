@@ -40,8 +40,5 @@ COPY root/ /
 # ports and volumes
 EXPOSE 8080 25565 8123
 VOLUME /minecraft
-WORKDIR /minecraft
 
 
-RUN git clone https://github.com/isitgeorge/McMyAdmin-Extension-Dynmap.git /minecraft/Modern/Extensions/Dynmap
-RUN git clone https://github.com/isitgeorge/McMyAdmin-Extension-BanLookup.git /minecraft/Modern/Extensions/BanLookup
