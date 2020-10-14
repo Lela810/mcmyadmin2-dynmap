@@ -40,7 +40,8 @@ COPY root/ /
 
 RUN git clone https://github.com/Lela810/McMyAdmin-Dynmapextension.git
 
-RUN ln -s /McMyAdmin-Dynmapextension /minecraft/Modern/Extensions
+RUN mkdir /minecraft
+RUN mv /McMyAdmin-Dynmapextension/* /minecraft
 
 # ports and volume
 EXPOSE 8080 25565 8123
