@@ -1,5 +1,7 @@
 FROM lsiobase/ubuntu:xenial
 
+MAINTAINER Lela810
+
 # set version label
 ARG BUILD_DATE
 ARG VERSION
