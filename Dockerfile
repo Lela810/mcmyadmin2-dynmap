@@ -46,7 +46,4 @@ VOLUME /minecraft
 #Add Dynmap Extension
 RUN git clone https://github.com/Lela810/McMyAdmin-Dynmapextension.git
 
-WORKDIR /
-CMD mkdir /minecraft/Modern
-CMD mkdir /minecraft/Modern/Extensions
 
