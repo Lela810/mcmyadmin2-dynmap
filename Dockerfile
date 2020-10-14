@@ -36,14 +36,16 @@ RUN \
 # copy local files
 COPY root/ /
 
-#Add Dynmap Extension
-
-RUN git clone https://github.com/Lela810/McMyAdmin-Dynmapextension.git
-
-
 # ports and volume
 EXPOSE 8080 25565 8123
 VOLUME /minecraft
 
-RUN mv /McMyAdmin-Dynmapextension/* /minecraft
+
+#Add Dynmap Extension
+RUN git clone https://github.com/Lela810/McMyAdmin-Dynmapextension.git
+
+WORKDIR /
+CMD mkdir /minecraft/Modern
+CMD mkdir /minecraft/Modern/Extensions
+CMD mv /McMyAdmin-Dynmapextension/* /minecraft/Modern/Extensions
 
