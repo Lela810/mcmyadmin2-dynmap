@@ -16,6 +16,7 @@ RUN \
 	libgdiplus \
 	openjdk-8-jdk-headless \
 	unzip \
+	git \
 	zip && \
  echo "**** install mcmyadmin ****" && \
  curl -o \
@@ -34,6 +35,10 @@ RUN \
 
 # copy local files
 COPY root/ /
+
+#Add Dynmap Extension
+
+RUN git clone https://github.com/Lela810/McMyAdmin-Dynmapextension.git
 
 # ports and volumes
 EXPOSE 8080 25565 8123
