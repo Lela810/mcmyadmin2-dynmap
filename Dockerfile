@@ -49,5 +49,4 @@ RUN git clone https://github.com/Lela810/McMyAdmin-Dynmapextension.git
 WORKDIR /
 CMD mkdir /minecraft/Modern
 CMD mkdir /minecraft/Modern/Extensions
-CMD cp /McMyAdmin-Dynmapextension/* /minecraft/Modern/Extensions
 
