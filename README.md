@@ -1,7 +1,5 @@
 Branch from Linuxserver/mcmyadmin2 for Dynmap
 
-To add the Dynmap extension (Lela810/McMyAdmin-Dynmapextension) to your MCMA move the Dynmap Folder to /minecraft/Modern/Extensions.
-Dynmap default Port: 8123
 
 
 [McMyAdmin][appurl] combines minecraft with a web control panel and admin console so can take a little while to start up.
@@ -53,3 +51,6 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
 
 After starting the container, log into the Web UI as the `admin` user with the password `password` and change the password.
 You should also consider serving the admin UI over https.
+
+To add the Dynmap extension (Lela810/McMyAdmin-Dynmapextension) to your MCMA move the Dynmap Folder to /minecraft/Modern/Extensions.
+Dynmap default Port: 8123
