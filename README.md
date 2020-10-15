@@ -2,9 +2,9 @@ Branch from Linuxserver/mcmyadmin2 for Dynmap
 
 
 
-[McMyAdmin][appurl] combines minecraft with a web control panel and admin console so can take a little while to start up.
+combines minecraft with a web control panel and admin console so can take a little while to start up.
 
-[![mcmyadmin](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mcmyadmin-banner.png)][appurl]
+(https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/mcmyadmin-banner.png)]
 
 ## Usage
 
