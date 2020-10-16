@@ -18,7 +18,6 @@ RUN \
 	libgdiplus \
 	openjdk-8-jdk-headless \
 	unzip \
-	git \
 	zip && \
  echo "**** install mcmyadmin ****" && \
  curl -o \
@@ -42,8 +41,5 @@ COPY root/ /
 EXPOSE 8080 25565 8123
 VOLUME /minecraft
 
-
-#Add Dynmap Extension
-RUN git clone https://github.com/Lela810/McMyAdmin-Dynmapextension.git
 
 
